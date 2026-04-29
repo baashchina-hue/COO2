@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Verification View</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background-color: #1a4a7c;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .download-btn {
+            background-color: #ffffff;
+            color: #1a4a7c;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #e2e6ea;
+        }
+
+        /* Section Titles */
+        .section-title {
+            background-color: #f8f9fa;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #dee2e6;
+            color: #1a4a7c;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Information Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .info-box {
+            margin-bottom: 5px;
+        }
+
+        .info-box label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: #777;
+            margin-bottom: 3px;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 15px;
+            color: #111;
+            word-wrap: break-word;
+        }
+
+        /* Document Status */
+        .status-valid {
+            color: #28a745;
+            font-weight: 800;
+        }
+
+        /* Goods Table */
+        .table-container {
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        table th {
+            background-color: #f1f3f5;
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        /* Footer Info */
+        .footer-note {
+            padding: 20px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span>Verification Document</span>
+        <a href="#" class="download-btn">Download Document</a>
+    </div>
+    
+    <div class="section-title">Certificate Information</div>
+    <div class="content-grid">
+        <div class="info-box">
+            <label>Certificate Number</label>
+            <p>GC/2026/016/2208522A/00021803</p>
+        </div>
+        <div class="info-box">
+            <label>IEC Number</label>
+            <p>0898008026</p>
+        </div>
+        <div class="info-box">
+            <label>Firm Name</label>
+            <p>KOEL FLUID DYNAMICS PRIVATE LIMITED</p>
+        </div>
+        <div class="info-box">
+            <label>Document Type</label>
+            <p>Certificate Of Origin Letter</p>
+        </div>
+        <div class="info-box">
+            <label>Issue Date</label>
+            <p>11/02/2026</p>
+        </div>
+        <div class="info-box">
+            <label>Current Status</label>
+            <p class="status-valid">VALID</p>
+        </div>
+    </div>
+
+    <div class="section-title">Export & Import Details</div>
+    <div class="content-grid">
+        <div class="info-box">
+            <label>Exporter Country</label>
+            <p>India</p>
+        </div>
+        <div class="info-box">
+            <label>Importer Name</label>
+            <p>KHALED AL-HALHALI & PARTNER COMPANY FOR TRADING</p>
+        </div>
+        <div class="info-box">
+            <label>Importer Country</label>
+            <p>Oman</p>
+        </div>
+        <div class="info-box">
+            <label>Means of Transport</label>
+            <p>Sea</p>
+        </div>
+    </div>
+
+    <div class="section-title">Description of Goods</div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.N.</th>
+                    <th>Description of Goods</th>
+                    <th>Origin Criterion</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>26.04 WL 7.5 HP TP DOL C.I.</td>
+                    <td>Indian Origin</td>
+                    <td>50.000 NOS</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>32.04 WL 10 HP TP DOL C.I.</td>
+                    <td>Indian Origin</td>
+                    <td>60.000 NOS</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>5.06 10 HP TP DOL C.I.</td>
+                    <td>Indian Origin</td>
+                    <td>20.000 NOS</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-note">
+        Report generated on 29/04/2026 | IP Address: 185.80.143.130
+    </div>
+</div>
+
+</body>
+</html>
